@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64b1bdfc-1fcf-42c3-b692-c2e30d5f5a5d" name="Changes" comment="Initial commit">
+    <list default="true" id="64b1bdfc-1fcf-42c3-b692-c2e30d5f5a5d" name="Changes" comment="refactor: reuse similar classes and code blocks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/directionalKeypad.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numericKeypad.py" beforeDir="false" afterPath="$PROJECT_DIR$/keypad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,11 +141,20 @@
       <option name="project" value="LOCAL" />
       <updated>1734795355815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor: reuse similar classes and code blocks">
+      <option name="closed" value="true" />
+      <created>1734796421544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734796421544</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="refactor: reuse similar classes and code blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: reuse similar classes and code blocks" />
   </component>
 </project>
