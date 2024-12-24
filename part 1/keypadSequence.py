@@ -30,14 +30,11 @@ class KeypadSequence:
 
     def run(self):
         numeric_keypad = Keypad(self.NUMERIC_KEYPAD_ARRAY, self.NUMERIC_KEYPAD_STARTING_POS)
-        directional_keypad1 = Keypad(self.DIRECTIONAL_KEYPAD_ARRAY, self.DIRECTIONAL_KEYPAD_STARTING_POS)
-        directional_keypad2 = Keypad(self.DIRECTIONAL_KEYPAD_ARRAY, self.DIRECTIONAL_KEYPAD_STARTING_POS)
-
-        directional_sequence1 = get_keypad_sequence(keypad=numeric_keypad, sequence=self.sequence)
-        directional_sequence2 = get_keypad_sequence(keypad=directional_keypad1, sequence=directional_sequence1)
-        directional_sequence3 = get_keypad_sequence(keypad=directional_keypad2, sequence=directional_sequence2)
-
-        self.calculate_complexity(directional_sequence3)
+        directional_sequence = get_keypad_sequence(keypad=numeric_keypad, sequence=self.sequence)
+        for i in range(2):
+            directional_keypad = Keypad(self.DIRECTIONAL_KEYPAD_ARRAY, self.DIRECTIONAL_KEYPAD_STARTING_POS)
+            directional_sequence = get_keypad_sequence(keypad=directional_keypad, sequence=directional_sequence)
+        self.calculate_complexity(directional_sequence)
 
 
 def get_keypad_sequence(keypad, sequence):
@@ -58,6 +55,6 @@ def get_sequence_length(sequence):
 def get_numeric_part_of_sequence(sequence):
     match = re.search(r'\d+', sequence)
     if match:
-        number = int(match.group())  # Convert the extracted digits to an integer
+        number = int(match.group())
         return number
     return 0
